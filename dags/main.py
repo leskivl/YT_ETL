@@ -39,3 +39,10 @@ with DAG(
 
     # Define dependencies
     playlist_id >> video_ids >> extract_data >> save_to_json_task
+
+# TODO
+# sensor
+# add spark script -> save raw data,
+# sensor - check if new data is available -> read with pyspark + add cols + save silver data
+
+# SubDAG  + transfer data between DAGs
